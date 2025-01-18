@@ -1,7 +1,11 @@
 import aiohttp
 import asyncio
-import time
+import os, time
 from pyrogram import Client, filters
+apiid=os.getenv("apiid")
+apih=os.getenv("apihash")
+tk=os.getenv("tk")
+
 
 async def download_file(url, download_path, message):
     async with aiohttp.ClientSession() as session:
@@ -69,7 +73,7 @@ async def start_command(client, message):
 
 async def main():
     # Replace with your bot token
-    app = Client("my_bot", bot_token="your-bot-token")
+    app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
 
     # Run the bot
     await app.run()
