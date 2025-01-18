@@ -33,7 +33,7 @@ async def update_progress_message(message, current, total, speed):
     progress_text = f"Download Progress: {percentage:.2f}% - Speed: {speed_str}"
     
     # Update the same message (avoid sending new messages)
-    await message.edit(progress_text)
+    await message.edit_text(progress_text)
 
 async def upload_file(client, file_path, chat_id, message):
     with open(file_path, "rb") as f:
