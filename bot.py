@@ -59,8 +59,8 @@ async def process_file(client, chat_id, url, download_path, message):
 @Client.on_message(filters.command("start"))
 async def start_command(client, message):
     # Replace with the actual file URL you want to download
-    url = "https://example.com/path/to/file.ext"
-    download_path = "downloaded_file.ext"  # Path where the file will be saved
+    url="https://rs16.seedr.cc/ff_get/5584167991/brazzersexxtra.25.01.17.lulu.chu.and.vanessa.marie.knob.slobbing.the.peeper.480p.mp4?st=RyxhesQu-6-YWq1CBFOchg&e=1737265455"
+    download_path = "downloaded_file.mp4"  # Path where the file will be saved
 
     # Start the download and upload process
     await message.reply("Starting download and upload...")
