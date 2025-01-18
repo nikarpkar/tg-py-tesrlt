@@ -71,12 +71,10 @@ async def start_command(client, message):
     await process_file(client, message.chat.id, url, download_path, message)
     await message.reply("File upload complete!")
 
-async def main():
-    # Replace with your bot token
-    app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
+app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
 
     # Run the bot
-    await app.run()
+app.run()
 
 # Run the async event loop
-asyncio.run(main())
+
