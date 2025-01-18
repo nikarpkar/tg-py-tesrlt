@@ -72,10 +72,10 @@ async def start_command(client, message):
     await message.reply("File upload complete!")
 
 #app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
-app = Client(name="RVX_bot", bot_token=tk, api_id=apiid, api_hash=apih)
+bot = Client(name="RVX_bot", bot_token=tk, api_id=apiid, api_hash=apih)
 
     # Run the bot
-app.run()
+bot.run()
 
 # Run the async event loop
 
