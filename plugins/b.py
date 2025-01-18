@@ -65,8 +65,8 @@ async def start_command(client, message):
     download_path = "downloaded_file.mp4"  # Path where the file will be saved
 
     # Start the download and upload process
-    await message.reply("Starting download and upload...")
-    await process_file(client, message.chat.id, url, download_path, message)
+    msg= await message.reply("Starting download and upload...")
+    await process_file(client, message.chat.id, url, download_path, msg)
     await message.reply("File upload complete!")
 
 
