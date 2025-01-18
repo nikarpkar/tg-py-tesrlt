@@ -71,7 +71,8 @@ async def start_command(client, message):
     await process_file(client, message.chat.id, url, download_path, message)
     await message.reply("File upload complete!")
 
-app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
+#app = Client("my_bot",api_id=apiid,api_hash=apih, bot_token=tk)
+app = Client(name="RVX_bot", bot_token=tk, api_id=apiid, api_hash=apih)
 
     # Run the bot
 app.run()
